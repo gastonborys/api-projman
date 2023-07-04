@@ -1,0 +1,4 @@
+PORT=3001
+MONGO_SERVER="mongodb://localhost:27017"
+MONGO_DB="projman"
+JWT_KEY=""
