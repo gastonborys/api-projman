@@ -31,8 +31,8 @@ const middlewares = () => {
     app.use(
         cors({
             origin: '*',
-            methods: ['POST'],
-            allowedHeaders: ['Content-Type'],
+            methods: ['POST', 'GET', 'PUT', 'DELETE'],
+            allowedHeaders: ['Content-Type', 'Authorization'],
         })
     );
 
