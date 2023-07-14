@@ -25,6 +25,12 @@ const db = () => {
     mongoose.set('strictQuery', false);
 
     mongoose.connect(`${config.mongo.server}/${config.mongo.db}`);
+
+    mongoose.connection.once('connected', () => {
+        console.log(`Conectado a la db`);
+    });
+
+
 }
 
 const middlewares = () => {
